@@ -197,6 +197,8 @@ public class Utils {
                     }
                 } else {
                     if (provider.getCount() == 0) {
+                        remoteMediaClient.setStreamVolume(0.5F);
+
                         remoteMediaClient.queueLoad(newItemArray, 0,
                                 MediaStatus.REPEAT_MODE_REPEAT_OFF, null);
                     } else {
